@@ -16,20 +16,24 @@
     <main class="app-shell">
       <section class="panel login-panel" id="loginPanel">
         <h1>تسجيل الدخول</h1>
-        <p class="subtitle">ادخل بياناتك للوصول إلى لوحة الرتب</p>
+        <p class="subtitle">ادخل بياناتك للوصول إلى لوحة الرتب والجدول المصري</p>
+
         <form id="loginForm" class="form-grid">
           <label>
             الاسم
             <input type="text" id="name" placeholder="اكتب اسمك" required />
           </label>
+
           <label>
             رقم العضوية
             <input type="text" id="memberId" placeholder="مثال: EGY-1024" required />
           </label>
+
           <label>
             كلمة المرور
             <input type="password" id="password" placeholder="••••••••" required />
           </label>
+
           <button type="submit" class="btn-primary">دخول</button>
         </form>
       </section>
@@ -37,35 +41,41 @@
       <section class="panel dashboard hidden" id="dashboard">
         <header class="dashboard-head">
           <div>
-            <h2>نظام الرتب - الموعد المصري</h2>
+            <h2>نظام الرتب - التوقيت المصري</h2>
             <p>مرحباً <span id="welcomeName"></span> 👋</p>
           </div>
-          <button id="logout" class="btn-secondary">تسجيل خروج</button>
+          <div class="head-actions">
+            <div class="egypt-time-box glow-box">
+              <span>الوقت في مصر</span>
+              <strong id="egyptTime">--:--:--</strong>
+            </div>
+            <button id="logout" class="btn-secondary">تسجيل خروج</button>
+          </div>
         </header>
 
         <div class="cards-grid">
-          <article class="rank-card">
-            <h3>رتبة اليوم</h3>
-            <strong>قائد الفريق</strong>
-            <p>تم التحديث: 10:30 مساءً</p>
+          <article class="rank-card glow-box">
+            <h3>رتبتك الحالية</h3>
+            <strong>مشرف أول</strong>
+            <p>آخر ترقية: 15 يناير</p>
           </article>
 
-          <article class="rank-card">
-            <h3>موعد الاجتماع</h3>
-            <strong>السبت - 9:00 مساءً</strong>
-            <p>توقيت القاهرة</p>
+          <article class="rank-card glow-box">
+            <h3>الموعد القادم</h3>
+            <strong>الجمعة - 8:30 مساءً</strong>
+            <p>اجتماع الفريق (القاهرة)</p>
           </article>
 
-          <article class="rank-card">
-            <h3>التقييم الأسبوعي</h3>
-            <strong>92%</strong>
-            <p>أداء ممتاز جداً</p>
+          <article class="rank-card glow-box">
+            <h3>نقاط الأداء</h3>
+            <strong>94%</strong>
+            <p>ممتاز - أعلى من المتوسط</p>
           </article>
 
-          <article class="rank-card">
-            <h3>ملاحظة</h3>
-            <strong>استمر بنفس المستوى</strong>
-            <p>في انتظار الترقية القادمة</p>
+          <article class="rank-card glow-box">
+            <h3>حالة الترقية</h3>
+            <strong>جاهز للترقية</strong>
+            <p>متبقي اعتماد القائد</p>
           </article>
         </div>
       </section>
