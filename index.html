@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة الرتب | Bavly</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel login-panel" id="loginPanel">
+        <h1>تسجيل الدخول</h1>
+        <p class="subtitle">ادخل بياناتك للوصول إلى لوحة الرتب</p>
+        <form id="loginForm" class="form-grid">
+          <label>
+            الاسم
+            <input type="text" id="name" placeholder="اكتب اسمك" required />
+          </label>
+          <label>
+            رقم العضوية
+            <input type="text" id="memberId" placeholder="مثال: EGY-1024" required />
+          </label>
+          <label>
+            كلمة المرور
+            <input type="password" id="password" placeholder="••••••••" required />
+          </label>
+          <button type="submit" class="btn-primary">دخول</button>
+        </form>
+      </section>
+
+      <section class="panel dashboard hidden" id="dashboard">
+        <header class="dashboard-head">
+          <div>
+            <h2>نظام الرتب - الموعد المصري</h2>
+            <p>مرحباً <span id="welcomeName"></span> 👋</p>
+          </div>
+          <button id="logout" class="btn-secondary">تسجيل خروج</button>
+        </header>
+
+        <div class="cards-grid">
+          <article class="rank-card">
+            <h3>رتبة اليوم</h3>
+            <strong>قائد الفريق</strong>
+            <p>تم التحديث: 10:30 مساءً</p>
+          </article>
+
+          <article class="rank-card">
+            <h3>موعد الاجتماع</h3>
+            <strong>السبت - 9:00 مساءً</strong>
+            <p>توقيت القاهرة</p>
+          </article>
+
+          <article class="rank-card">
+            <h3>التقييم الأسبوعي</h3>
+            <strong>92%</strong>
+            <p>أداء ممتاز جداً</p>
+          </article>
+
+          <article class="rank-card">
+            <h3>ملاحظة</h3>
+            <strong>استمر بنفس المستوى</strong>
+            <p>في انتظار الترقية القادمة</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

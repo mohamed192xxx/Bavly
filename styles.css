@@ -1,0 +1,122 @@
+:root {
+  --bg: #070b17;
+  --panel: #101a2d;
+  --panel-2: #0f1524;
+  --text: #ecf2ff;
+  --accent: #42d7ff;
+  --accent-2: #955bff;
+  --muted: #a7b3c8;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #122241, var(--bg) 45%), var(--bg);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+}
+
+.app-shell {
+  width: min(950px, 92vw);
+}
+
+.panel {
+  background: linear-gradient(145deg, rgba(16, 26, 45, 0.95), rgba(10, 16, 30, 0.95));
+  border: 1px solid rgba(121, 149, 208, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 0.8rem rgba(66, 215, 255, 0.2), 0 0 2rem rgba(149, 91, 255, 0.2);
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  color: #d6deee;
+}
+
+input {
+  border: 1px solid rgba(121, 149, 208, 0.35);
+  background: var(--panel-2);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.8rem 0.9rem;
+  outline: none;
+  transition: 0.25s;
+}
+
+input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 1rem rgba(66, 215, 255, 0.3);
+}
+
+.btn-primary,
+.btn-secondary {
+  border: 0;
+  border-radius: 12px;
+  padding: 0.75rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: #041422;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+}
+
+.dashboard-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.rank-card {
+  background: linear-gradient(160deg, rgba(66, 215, 255, 0.13), rgba(149, 91, 255, 0.12));
+  border: 1px solid rgba(66, 215, 255, 0.28);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 0 0.8rem rgba(66, 215, 255, 0.35), 0 0 1.2rem rgba(149, 91, 255, 0.2);
+}
+
+.rank-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #9cd9ff;
+}
+
+.rank-card strong {
+  display: block;
+  margin: 0.4rem 0;
+}
+
+.hidden {
+  display: none;
+}
