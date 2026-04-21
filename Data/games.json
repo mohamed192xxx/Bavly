@@ -1,0 +1,38 @@
+[
+  {
+    "id": "game-apex",
+    "name": "Apex Legends",
+    "description": "Squad-based battle royale",
+    "exePath": "C:\\Program Files\\EA Games\\Apex\\r5apex.exe",
+    "workingDirectory": "C:\\Program Files\\EA Games\\Apex",
+    "imagePath": "../Cache/images/apex.jpg",
+    "categoryId": "cat-fps",
+    "launchCount": 129,
+    "lastPlayed": "2026-04-20T20:42:12Z",
+    "isFeatured": true
+  },
+  {
+    "id": "game-valorant",
+    "name": "Valorant",
+    "description": "5v5 tactical shooter",
+    "exePath": "C:\\Riot Games\\VALORANT\\live\\VALORANT.exe",
+    "workingDirectory": "C:\\Riot Games\\VALORANT\\live",
+    "imagePath": "../Cache/images/valorant.jpg",
+    "categoryId": "cat-fps",
+    "launchCount": 214,
+    "lastPlayed": "2026-04-19T16:18:49Z",
+    "isFeatured": true
+  },
+  {
+    "id": "game-lol",
+    "name": "League of Legends",
+    "description": "Classic 5v5 MOBA",
+    "exePath": "C:\\Riot Games\\League of Legends\\LeagueClient.exe",
+    "workingDirectory": "C:\\Riot Games\\League of Legends",
+    "imagePath": "../Cache/images/lol.jpg",
+    "categoryId": "cat-moba",
+    "launchCount": 88,
+    "lastPlayed": "2026-04-18T10:01:00Z",
+    "isFeatured": false
+  }
+]

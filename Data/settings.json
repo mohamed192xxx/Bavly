@@ -1,0 +1,10 @@
+{
+  "theme": "dark",
+  "backgroundType": "image",
+  "backgroundPath": "../Cache/backgrounds/default.jpg",
+  "pinEnabled": true,
+  "pinHash": "e1A0GOHWtJcXJx1OaMp7fRp3AjvWbYuWRsnFpks9NMY=",
+  "pinSalt": "N+lw5xekKbPUA56VRIBFTg==",
+  "adminHash": "Q8WFhHwWFZMiTSRxmHKeAr80G/nymslKls2hArmSGNA=",
+  "adminSalt": "7PM41ZS7c4caNh0Q5Eh58w=="
+}

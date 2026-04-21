@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cat-fps",
+    "name": "FPS",
+    "description": "Fast-paced shooter titles",
+    "colorHex": "#ff3333"
+  },
+  {
+    "id": "cat-moba",
+    "name": "MOBA",
+    "description": "Competitive team strategy",
+    "colorHex": "#d8b34a"
+  },
+  {
+    "id": "cat-racing",
+    "name": "Racing",
+    "description": "Arcade and simulation racing games",
+    "colorHex": "#42d3ff"
+  }
+]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Launcher System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="launcher">
+  <div id="bg-layer"></div>
+  <div class="shell glass-panel">
+    <header class="topbar">
+      <h1>Apex Launcher System</h1>
+      <div class="actions">
+        <select id="themeSelect">
+          <option value="dark">Dark</option>
+          <option value="red">Red</option>
+          <option value="gold">Gold</option>
+        </select>
+        <button class="btn" onclick="window.openAdmin()">Admin Panel</button>
+      </div>
+    </header>
+
+    <section class="filters">
+      <input id="searchInput" placeholder="Search game..." />
+      <select id="categoryFilter"></select>
+    </section>
+
+    <section id="gamesGrid" class="games-grid"></section>
+  </div>
+
+  <div id="lockOverlay" class="lock-overlay hidden">
+    <div class="lock-card glass-panel">
+      <h2>System Locked</h2>
+      <p>Enter PIN to unlock station.</p>
+      <input id="pinInput" type="password" placeholder="PIN" maxlength="12" />
+      <div class="lock-actions">
+        <button class="btn" onclick="window.submitPin()">Unlock</button>
+      </div>
+      <div id="pinSetup" class="pin-setup hidden">
+        <p>No PIN found. Set first PIN:</p>
+        <button class="btn" onclick="window.setPin()">Set PIN</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastHost" class="toast-host"></div>
+  <script src="app.js"></script>
+</body>
+</html>
